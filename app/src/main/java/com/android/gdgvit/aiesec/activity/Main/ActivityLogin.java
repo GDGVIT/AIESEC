@@ -82,9 +82,9 @@ public class ActivityLogin extends AppCompatActivity{
         nextImageButton.setBackground(getDrawable(R.drawable.ic_chevron_right_black_24dp));
 
 
-        if(true)//isLoggedIn() replaced due to API problem
+        if(isLoggedIn()) //replaced due to API problem
         {
-            Intent i = new Intent(ActivityLogin.this,AiesecMainActivity.class);
+            Intent i = new Intent(ActivityLogin.this,ActivityEpMain.class);
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(i);
